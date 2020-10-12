@@ -22,5 +22,7 @@ The addresses is the range, where MetalLBLoad Loadbalancer will provide an IP ad
 Deploy this ConfigMap now in the cluster using helm:
 
 ```sh
-helm install metallb stable/metallb --namespace metallb-system --create-namespace --values ./config.yml
+helm install metallb stable/metallb --namespace metallb-system --create-namespace 
+
+kubectl deploy -f ./config.yml
 ```
