@@ -24,5 +24,5 @@ Deploy this ConfigMap now in the cluster using helm:
 ```sh
 helm install metallb stable/metallb --namespace metallb-system --create-namespace 
 
-kubectl deploy -f ./config.yml
+kubectl apply -f ./config.yaml
 ```
