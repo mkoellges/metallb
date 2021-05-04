@@ -46,8 +46,6 @@ Otherwise try to install using helm:
 
 ```sh
 helm install metallb stable/metallb --namespace metallb-system --create-namespace 
-
-kubectl apply -f ./config.yaml
 ```
 Last but not least, define the ip address range where to set the LB address:
 
